@@ -1,6 +1,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import re
+from urllib.parse import urlsplit
 root=Path(__file__).resolve().parents[1]
 class Parser(HTMLParser):
  def __init__(self):super().__init__();self.ids=[];self.refs=[]
@@ -14,7 +15,7 @@ for p in root.glob('*.html'):
  parser=Parser();parser.feed(p.read_text())
  assert len(parser.ids)==len(set(parser.ids)),(p,'duplicate ID')
  for ref in parser.refs:
-  if not re.match(r'^(https?:|#|mailto:)',ref):assert (p.parent/ref).exists(),(p,ref)
+  if not re.match(r'^(https?:|#|mailto:)',ref):assert (p.parent/urlsplit(ref).path).exists(),(p,ref)
  assert '<html lang="vi">' in p.read_text()
  print('PASS HTML / links:',p.name)
 for p in root.rglob('*'):

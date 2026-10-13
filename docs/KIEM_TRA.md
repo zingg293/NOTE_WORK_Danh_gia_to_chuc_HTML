@@ -25,3 +25,7 @@ python tests/structure.py
 ```
 
 Đây là kiểm tra nghiệp vụ và trạng thái; không cần cài thư viện. Việc công bố thật, đăng nhập, lưu dữ liệu chung, quyền máy chủ, ký số, .xlsx và hạn mức đồng thời cần được kiểm tra ở phiên bản triển khai.
+
+## Bản giao diện 1.1
+
+Đối chiếu mã màu và khung từ CSS của demo tham chiếu: menu/thanh trên #205b96, nền #f4f7fb, chữ #253447, viền #dce4ed, mục menu chọn nền trắng. Cập nhật menu biểu tượng, thẻ đơn vị, khung bảng/form và hướng dẫn. Giữ khóa localStorage. Đã chạy lại kiểm tra trạng thái và cấu trúc/đường dẫn có tham số phiên bản. Chưa kiểm trực tiếp hình ảnh bằng trình duyệt thật.

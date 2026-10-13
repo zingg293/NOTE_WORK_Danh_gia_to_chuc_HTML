@@ -1,6 +1,10 @@
-# NOTE WORK · Demo Đánh giá tổ chức
+# NOTE WORK · Demo Đánh giá tổ chức · Giao diện 1.1
 
 Bộ HTML nhiều trang, tiếng Việt, chạy độc lập; không cần cài thư viện, không dùng API hoặc tài nguyên từ dịch vụ bên ngoài.
+
+## Bản cập nhật giao diện
+
+Bản 1.1 dùng khung xanh dương NOTE WORK, mục menu được chọn nền trắng, bảng/biểu mẫu viền xám xanh. Hướng dẫn thay code GitHub và cập nhật web từng bước nằm trong `docs/CAP_NHAT_GIT_VA_WEB.md`.
 
 ## Chạy ngay trên máy
 
